@@ -1,11 +1,19 @@
+"use client"
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import NavLink from "./NavLink";
 
 const Navbar = () => {
+    const pathName=usePathname();
+    console.log(pathName);
+
+    if(pathName.startsWith("/dashboard")) return <></>;
+
     const navLinks=<>
-        <li><Link href="/about">About</Link></li>
-        <li><Link href="/about/contacts">Contacts</Link></li>
-        <li> <Link href="/login">Login</Link></li>
-        <li><Link href="/register">SignUp</Link></li>
+        <li><NavLink href="/about">About</NavLink></li>
+        <li><NavLink href="/stories">Stories</NavLink></li>
+        <li><NavLink href="/login">Login</NavLink></li>
+        <li><NavLink href="/register">SignUp</NavLink></li>
     </>
     return (
     <div className="navbar bg-base-100 shadow-sm flex justify-between">
