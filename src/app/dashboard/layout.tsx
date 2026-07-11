@@ -10,7 +10,7 @@ const DashboardLayout = ({children}) => {
                     <Link href="/" className="text-lg text-center w-full">😊 Dev Storey</Link>
                 </div>
                 <div className='flex flex-col gap-6 mt-10'>
-                    <Link className='px-4 py-2 bg-gray-700 text-white rounded-2xl mx-4 text-center' href="/dashboard/add-story">Add Story</Link>
+                    <Link className='px-4 py-2 bg-gray-700 text-white rounded-2xl mx-4 text-center' href="/dashboard/addStory">Add Story</Link>
                     <Link className='px-4 py-2 bg-gray-700 text-white rounded-2xl mx-4 text-center' href="/dashboard/my-profile">My Profile</Link>
                     <Link className='px-4 py-2 bg-gray-700 text-white rounded-2xl mx-4 text-center' href="/dashboard/settings">Settings</Link>
                 </div>
