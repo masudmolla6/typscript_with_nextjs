@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Title from '../../../components/Title';
 
-const StoryDetails = async({params}) => {
+type StoryDetailsProps = {
+  params: Promise<{
+    id: string;
+  }>;
+};
+
+const StoryDetails = async({params}:StoryDetailsProps) => {
     const {id}=await params;
     const devStories=[
                 {

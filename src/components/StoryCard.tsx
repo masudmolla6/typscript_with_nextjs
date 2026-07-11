@@ -1,7 +1,12 @@
+import { Story } from '@/types/story';
 import Link from 'next/link';
 import React from 'react';
 
-const StoryCard = ({ story }) => {
+type StoryCardProps = {
+  story: Story;
+};
+
+const StoryCard = ({ story }:StoryCardProps) => {
     const { id, name, description, company, experience, skills, image } = story;
 
     return (

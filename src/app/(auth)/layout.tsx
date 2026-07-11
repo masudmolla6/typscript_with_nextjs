@@ -1,6 +1,8 @@
-import React from 'react';
-
-const AuthLayout = ({children}) => {
+import React, { ReactNode } from 'react';
+type ChildrenProps={
+    children:ReactNode;
+}
+const AuthLayout = ({children}:ChildrenProps) => {
     return (
         <div className='flex min-h-screen gap-5 p-10'>
             <div className='flex-2'>

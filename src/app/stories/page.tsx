@@ -1,9 +1,10 @@
-import StoryCard from '@/components/StooryCard';
+import StoryCard from '@/components/StoryCard';
 import Title from '@/components/Title';
+import { Story } from '@/types/story';
 import React from 'react';
 
 const Stories = () => {
-    const devStories=[
+    const devStories:Story[]=[
                 {
                     "id": "1",
                     "name": "Rahim Uddin",
